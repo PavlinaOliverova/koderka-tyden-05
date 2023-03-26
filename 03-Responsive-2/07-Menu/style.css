@@ -41,3 +41,53 @@ a:hover {
 	background-color: #e74c3c;
 	color: white;
 }
+
+
+/* Výchozí obrazovka */
+
+
+.menu{
+	margin-top: 20px;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+
+a{
+	margin-bottom: 2px;
+}
+
+/* Více než 640px */
+
+@media screen and (min-width: 640px)
+	{ 
+		ul{
+			display: flex;
+			justify-content: space-around;
+		}
+
+		li{
+			flex: 1 1 25%;
+			padding: 2px;
+		}
+
+	}
+
+/* Více než 1000px */
+
+@media screen and (min-width: 1000px)
+	{
+		.hlavicka{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.menu{margin: 0;}
+
+	}
